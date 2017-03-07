@@ -1,10 +1,13 @@
 ###### MediaLibrary ######
 
 Master in Informatics and Computing Engineering
+
 Database and Web Applications Laboratory
+
 Instance: 2016/2017 
 
-This is the MediaLibrary© project documentation area. LBAW course
+
+This is the MediaLibrary© project documentation area.
 
 ##### Project #####
 
