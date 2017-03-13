@@ -53,6 +53,9 @@
                     <li>
                         <a href="services.html">Services</a>
                     </li>
+                    <li>
+                        <a href="addItem.html">Add item</a>
+                    </li>
                     <li class="active">
                         <a href="search.html">Search</a>
                     </li>
@@ -99,16 +102,19 @@
                         <a href="#" class="dropdown-toggle" data-toggle="dropdown">Rui Vilares <b class="caret"></b></a>
                         <ul class="dropdown-menu">
                             <li>
-                                <a href="signup.html">My profile</a>
+                                <a href="profile.html">My profile</a>
                             </li>
                             <li>
-                                <a href="login.html">My item</a>
+                                <a href="items.html">My wish list</a>
                             </li>
                             <li>
-                                <a href="signup.html">My loans</a>
+                                <a href="items.html">My items</a>
                             </li>
                             <li>
-                                <a href="signup.html">Log out</a>
+                                <a href="items.html">My loans</a>
+                            </li>
+                            <li>
+                                <a href="#">Log out</a>
                             </li>
                         </ul>
                     </li>
@@ -142,27 +148,35 @@
             <div class="col-md-3">
                 <h4>Items</h4>
                 <div class="list-group">
-                  <form class="list-group-item" action="">
-                    <input type="radio" name="type" value="all"> All<br>
-                    <input type="radio" name="type" value="book"> Book<br>
-                    <input type="radio" name="type" value="cd"> CD<br>
-                    <input type="radio" name="type" value="dvd"> DVD<br>
-                    <input type="radio" name="type" value="mp3"> MP3<br>
-                    <input type="radio" name="type" value="photos"> Photos<br>
-                    <input type="radio" name="type" value="slides"> Slides<br>
-                    <input type="radio" name="type" value="vhs"> VHS
-                  </form>
+                  <select class="list-group-item btn-block">
+                    <option value="all"> All</option>
+                    <option value="book"> Book</option>
+                    <option value="cd"> CD</option>
+                    <option value="dvd"> DVD</option>
+                    <option value="mp3"> MP3</option>
+                    <option value="photos"> Photos</option>
+                    <option value="slides"> Slides</option>
+                    <option value="vhs"> VHS</option>
+                  </select>
+
                   <h4>Loaned</h4>
-                  <form class="list-group-item" action="">
-                    <input type="radio" name="loaned" value="all"> All<br>
-                    <input type="radio" name="loaned" value="yes"> Yes<br>
-                    <input type="radio" name="loaned" value="no"> No
-                  </form>
+                  <select class="list-group-item btn-block">
+                    <option value="yes"> Yes</option>
+                    <option value="no"> No</option>
+                  </select>
                   <h4>Owner</h4>
-                  <form class="list-group-item" action="">
-                    <input type="radio" name="owner" value="me"> Me<br>
-                    <input type="radio" name="owner" value="other"> Other
-                  </form>
+                  <select class="list-group-item btn-block">
+                    <option value="me"> Me</option>
+                    <option value="other"> Other</option>
+                  </select>
+                  <h4>Classification</h4>
+                  <select class="list-group-item btn-block">
+                    <option value="1"> 1</option>
+                    <option value="2"> 2</option>
+                    <option value="3"> 3</option>
+                    <option value="4"> 4</option>
+                    <option value="5"> 5</option>
+                  </select>
                 </div>
             </div>
             <!-- Content Column -->
@@ -177,62 +191,57 @@
                 <h2>Results</h2>
                 <!-- Projects Row -->
                 <div class="row">
-                    <div class="col-md-4 img-portfolio">
-                        <a href="portfolio-item.html">
+                    <div class="col-sm-6 col-md-4 img-portfolio">
+                        <a href="item.html">
                             <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                         </a>
                         <h3>
-                            <a href="portfolio-item.html">Item</a>
+                            <a href="item.html">Item</a>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                     </div>
-                    <div class="col-md-4 img-portfolio">
-                        <a href="portfolio-item.html">
+                    <div class="col-sm-6 col-md-4 img-portfolio">
+                        <a href="item.html">
                             <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                         </a>
                         <h3>
-                            <a href="portfolio-item.html">Item</a>
+                            <a href="item.html">Item</a>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                     </div>
-                    <div class="col-md-4 img-portfolio">
-                        <a href="portfolio-item.html">
+                    <div class="col-sm-6 col-md-4 img-portfolio">
+                        <a href="item.html">
                             <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                         </a>
                         <h3>
-                            <a href="portfolio-item.html">Item</a>
+                            <a href="item.html">Item</a>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                     </div>
-                </div>
-                <!-- /.row -->
-
-                <!-- Projects Row -->
-                <div class="row">
-                    <div class="col-md-4 img-portfolio">
-                        <a href="portfolio-item.html">
+                    <div class="col-sm-6 col-md-4 img-portfolio">
+                        <a href="item.html">
                             <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                         </a>
                         <h3>
-                            <a href="portfolio-item.html">Item</a>
+                            <a href="item.html">Item</a>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                     </div>
-                    <div class="col-md-4 img-portfolio">
-                        <a href="portfolio-item.html">
+                    <div class="col-sm-6 col-md-4 img-portfolio">
+                        <a href="item.html">
                             <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                         </a>
                         <h3>
-                            <a href="portfolio-item.html">Item</a>
+                            <a href="item.html">Item</a>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                     </div>
-                    <div class="col-md-4 img-portfolio">
-                        <a href="portfolio-item.html">
+                    <div class="col-sm-6 col-md-4 img-portfolio">
+                        <a href="item.html">
                             <img class="img-responsive img-hover" src="http://placehold.it/700x400" alt="">
                         </a>
                         <h3>
-                            <a href="portfolio-item.html">Item</a>
+                            <a href="item.html">Item</a>
                         </h3>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam viverra euismod odio, gravida pellentesque urna varius vitae.</p>
                     </div>

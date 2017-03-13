@@ -128,102 +128,42 @@
     <!-- Page Content -->
     <div class="container">
 
-        <!-- Page Heading/Breadcrumbs -->
+        <!-- Marketing Icons Section -->
         <div class="row">
-            <div class="col-lg-12">
-                <h1 class="page-header">Item
-                </h1>
-                <ol class="breadcrumb">
-                    <li><a href="index.html">Home</a>
-                    </li>
-                    <li><a href="items.html">Items</a>
-                    </li>
-                    <li><a href="items.html">Books</a>
-                    </li>
-                    <li class="active">Item</li>
-                </ol>
-            </div>
-        </div>
-        <!-- /.row -->
-
-        <!-- Portfolio Item Row -->
-        <div class="row">
-
-            <div class="col-md-6">
-                <div class="col-md-8">
-                  <img class="img-responsive" src="http://placehold.it/750x500" alt="">
-                </div>
-                <div class="col-md-4">
-                  <button class="btn btn-default" type="button">Edit</button>
-                </div>
-                <div class="col-md-12">
-                  <h3>Item description</h3>
-                  <p><b>Name:</b> Item</p>
-                  <p><b>Year:</b> 2006</p>
-                  <p><b>Owner:</b> <a href="profile.html">Rui Vilares</a></p>
-                  <p><b>Type:</b> DVD</p>
-                  <p><b>Notes:</b> some notes about the item.</p>
-                  <p><b>Votes:</b>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                    <i class="fa fa-star-o" aria-hidden="true"></i>
-                  </p>
-                </div>
-            </div>
-
-            <div class="col-md-6">
-              <div class="col-md-12">
-                <h3>Loan history</h3>
-                <table class="table">
-                  <thead>
-                    <tr>
-                      <th>User</th>
-                      <th>Start</th>
-                      <th>End</th>
-                      <th></th>
-                    </tr>
-                  </thead>
-                  <tbody>
-                    <tr>
-                      <td><a href="profile.html">Pedro Silva</a></td>
-                      <td>14th March 2016</td>
-                      <td></td>
-                      <td><a href="#">Record return</a></td>
-                    </tr>
-                    <tr>
-                      <td><a href="profile.html">Joana Monteiro</a></td>
-                      <td>10th March 2010</td>
-                      <td>10th April 2010</td>
-                      <td><a href="#"></a></td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-
             <div class="col-md-12">
-              <h3>Comments</h3>
-              <div class="row">
-                <div class="col-md-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <textarea style="width:100%" placeholder="Write your comment here!" class=""></textarea>
-                            <button class="btn btn-default pull-right" type="button">Send</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 col-md-offset-6">
-                    <div class="panel panel-default">
-                        <div class="panel-body">
-                            <p>Nice item!</p>
-                            <p class="pull-right"><a href="profile.html">António Sousa</a>, 14th March 2016</p>
-                        </div>
-                    </div>
-                </div>
+                <h1 class="page-header">
+                    Add new item
+                </h1>
             </div>
+            <div class="col-md-6 col-md-offset-3">
+                <form class="form-signin">
+                  <label for="inputName" class="sr-only">Name</label>
+                  <input type="text" id="itemName" class="form-control" placeholder="Name" required="" autofocus="">
+                  <br>
+                  <select class="btn btn-default btn-block">
+                    <option value="all"> All</option>
+                    <option value="book"> Book</option>
+                    <option value="cd"> CD</option>
+                    <option value="dvd"> DVD</option>
+                    <option value="mp3"> MP3</option>
+                    <option value="photos"> Photos</option>
+                    <option value="slides"> Slides</option>
+                    <option value="vhs"> VHS</option>
+                  </select>
+                  <br>
+                  <label for="inputEditor" class="sr-only">Edition</label>
+                  <input type="text" id="itemEdition" class="form-control" placeholder="Edition" required="" autofocus="">
+                  <br>
+                  <label for="inputISBN" class="sr-only">ISBN</label>
+                  <input type="text" id="itemISBN" class="form-control" placeholder="ISBN" required="" autofocus="">
+                  <br>
+                  <label for="inputPublisher" class="sr-only">Publiser</label>
+                  <input type="text" id="itemPublisher" class="form-control" placeholder="Publisher" required="" autofocus="">
+                  <br>
+                  <button class="btn btn-lg btn-default btn-block" type="submit">Submit</button>
+                </form>
+            </div>
+
         </div>
         <!-- /.row -->
 
